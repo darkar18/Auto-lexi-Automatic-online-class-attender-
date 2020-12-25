@@ -36,10 +36,10 @@ driver.get('https://classroom.google.com/u/1/h')
 time.sleep(1) # Let the user actually see something!
 # driver.find_element_by_xpath('//*[@id="openid-buttons"]/button[1]').click()
 login_text = driver.find_element_by_xpath('//*[@id="identifierId"]')
-login_text.send_keys("u1903024@rajagiri.edu.in")
+login_text.send_keys(email_id)
 driver.find_element_by_id("identifierNext").click()
 time.sleep(3)
-pwd = driver.find_element_by_xpath('//*[@class="whsOnd zHQkBf"]').send_keys("Alex@2001")
+pwd = driver.find_element_by_xpath('//*[@class="whsOnd zHQkBf"]').send_keys(your_password)
 driver.find_element_by_id('passwordNext').click()
 time.sleep(3)
 
